@@ -1,0 +1,19 @@
+{
+  "name": "vuejs-elabs-libs",
+  "homepage": "https://github.com/jsdom/abab#readme",
+  "author": "Manuel Tancoigne <m.tancoigne@gmail.com> (https://experimentslabs.com)",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Some libs used in vue projects. Work on progress",
+  "keywords": [
+    "vuejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/el-cms/vuejs-elabs-libs.git"
+  },
+  "main": "store.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
