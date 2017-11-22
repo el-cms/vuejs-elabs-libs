@@ -3,8 +3,8 @@
   "homepage": "https://github.com/jsdom/abab#readme",
   "author": "Manuel Tancoigne <m.tancoigne@gmail.com> (https://experimentslabs.com)",
   "license": "MIT",
-  "version": "0.0.1",
-  "description": "Some libs used in vue projects. Work on progress",
+  "version": "0.0.2",
+  "description": "Some libs used in vue projects. Work in progress",
   "keywords": [
     "vuejs"
   ],
@@ -14,6 +14,11 @@
   },
   "main": "store.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
