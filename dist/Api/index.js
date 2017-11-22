@@ -7,7 +7,7 @@ import _Promise from 'babel-runtime/core-js/promise';
  */
 import Vue from 'vue';
 import VueResource from 'vue-resource';
-import { store } from '../store';
+import { Store } from '../Store';
 
 Vue.use(VueResource);
 
@@ -84,13 +84,13 @@ var requestMethod = function requestMethod(method) {
     var loadingText = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
     var fakeUserId = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
 
-    var loader = store.dispatch('SET_LOADING_STATE', loadingText);
+    var loader = Store.dispatch('SET_LOADING_STATE', loadingText);
     console.log(url, payload);
     prepareRequest(fakeUserId);
     return Vue.http[method](createUrl(url), payload).then(function (response) {
       return _Promise.resolve(response.body);
     }).catch(function (error) {
-      return store.dispatch('ERROR_MANAGER', error);
+      return Store.dispatch('ERROR_MANAGER', error);
     }).finally(function () {
       loader.then(function (r) {
         return r.done();

@@ -3,7 +3,7 @@
   "homepage": "https://github.com/jsdom/abab#readme",
   "author": "Manuel Tancoigne <m.tancoigne@gmail.com> (https://experimentslabs.com)",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Some libs used in vue projects. Work in progress",
   "keywords": [
     "vuejs"
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/el-cms/vuejs-elabs-libs.git"
   },
-  "main": "store.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build",

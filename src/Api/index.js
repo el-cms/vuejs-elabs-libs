@@ -6,7 +6,7 @@
  */
 import Vue from 'vue'
 import VueResource from 'vue-resource'
-import { store } from '../store'
+import { Store } from '../Store'
 
 Vue.use(VueResource)
 
@@ -77,12 +77,12 @@ const prepareRequest = (fakeUserId = null) => {
  * @return {apiProxyMethod}
  */
 const requestMethod = method => (url, payload, loadingText = true, fakeUserId = null) => {
-  const loader = store.dispatch('SET_LOADING_STATE', loadingText)
+  const loader = Store.dispatch('SET_LOADING_STATE', loadingText)
   console.log(url, payload)
   prepareRequest(fakeUserId)
   return Vue.http[method](createUrl(url), payload)
     .then(response => Promise.resolve(response.body))
-    .catch(error => store.dispatch('ERROR_MANAGER', error))
+    .catch(error => Store.dispatch('ERROR_MANAGER', error))
     .finally(() => {
       loader.then(r => r.done())
     })
