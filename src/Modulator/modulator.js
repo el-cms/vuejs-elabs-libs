@@ -392,8 +392,8 @@ export default {
                 data,
                 singularModuleName)
                 .then().then(() => {
-                commit(`SET_${upperSingularName}`, data)
-              })
+                  commit(`SET_${upperSingularName}`, data)
+                })
               Notifier.notify({text: messages.successOnPatch, type: 'success'})
               return Promise.resolve(data)
             })

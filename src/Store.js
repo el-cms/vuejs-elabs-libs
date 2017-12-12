@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import ModuleBuilder from './Modulator'
 // VueX custom Modules
 import PageStateModule from './VueX/PageStateModule'
 import LoadersModule from './VueX/LoadersModule'
@@ -57,6 +58,7 @@ export const Store = new Vuex.Store({
     // })
   }
 })
+
 export function generateModule (moduleName, apiEndpoint, editable = true) {
   Store.registerModule(moduleName, ModuleBuilder(moduleName, apiEndpoint, editable))
 }
