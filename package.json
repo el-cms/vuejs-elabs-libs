@@ -3,7 +3,7 @@
   "homepage": "https://github.com/jsdom/abab#readme",
   "author": "Manuel Tancoigne <m.tancoigne@gmail.com> (https://experimentslabs.com)",
   "license": "MIT",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Some libs used in vue projects. Work in progress",
   "keywords": [
     "vuejs"

@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import ModuleBuilder from './Modulator';
 // VueX custom Modules
 import PageStateModule from './VueX/PageStateModule';
 import LoadersModule from './VueX/LoadersModule';
@@ -57,6 +58,7 @@ export var Store = new Vuex.Store({
     // })
   }
 });
+
 export function generateModule(moduleName, apiEndpoint) {
   var editable = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
 

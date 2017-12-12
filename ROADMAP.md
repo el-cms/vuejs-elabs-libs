@@ -6,9 +6,6 @@ See the [issues](https://github.com/el-cms/vuejs-elabs-libs/issues).
 
 ## [Next] - release date
 ### Added
-- Added a CHANGELOG
-- Added a ROADMAP file
-- Updated the README with exemples
 
 ### Changed
 
