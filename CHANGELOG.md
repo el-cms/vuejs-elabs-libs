@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [0.0.5] - 2017-12-10
+## [0.0.6] - 2017-12-10
 ### Added
 - Added a CHANGELOG
 - Added a ROADMAP file
